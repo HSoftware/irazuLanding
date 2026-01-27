@@ -1,0 +1,480 @@
+:root {
+--primary-color: #011514;
+--level1_color: #365B59;
+--level2_color: #1F3E3D;
+--level3_color: #082423;
+--level4_color: #011514;
+--alice_color: white;  /* aliceblue */
+--level5_color: #62a8a5;
+} 
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+
+}
+
+h1, h2, h3 {
+    font-family: "DM Serif Display", sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p, li, a, label {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+/* ********** HEADER ********** */
+
+
+/* ********** MAIN ********** */
+
+/* ********** ENGANCHE ********** */
+.enganche {
+    color: var(--primary-color);
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ********** FORMULARIO ********** */
+.formulario {
+    background-color: var(--alice_color);
+}
+
+.formulario .preguntas {
+    margin: 0 auto;
+    padding: 5rem 5rem 1rem;
+    background-color: var(--alice_color);
+    color: var(--level2_color);
+    width: 95%;
+    min-width: 360px;
+    max-width: 540px;
+    border-top: 1rem solid ;
+    border-bottom: 1rem solid;
+    border-left: 3rem solid;
+    border-right: 3rem solid;
+    border-radius: 1rem;
+
+}
+
+.formulario .preguntas input{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.formulario .preguntas button {
+    background-color: var(--level2_color);
+    border-radius: 1rem;
+}
+
+.formulario .preguntas .microtexto {
+    font-size: 1.2rem;
+}
+
+/* ********** PROPUESTA ********** */
+.respaldo {
+    background-color: var(--level2_color);
+    color: var(--alice_color);
+}
+
+
+/* ********** PROPUESTA ********** */
+
+.propuesta-valor {
+    background-color: var(--alice_color);
+}
+
+
+.emparejados img {
+    min-width: 290px;
+}
+
+
+/* ********** TESTIMONIOS ********** */
+.prueba-social {
+    background-color: var(--level2_color);
+    color: var(--alice_color);
+}
+
+.prueba-social h2 {
+    color:var(--alice_color);
+}
+
+.carouselContainer {
+    max-width:100%; 
+    margin:auto;
+}
+
+.carousel-container {
+  width: 240px;          /* 1 card */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.carousel-controls .btn {
+  background-color: var(--level1_color);
+  color: var(--alice_color);
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.carousel-controls .btn:hover {
+  background-color: var(--level5_color);
+  color: var(--primary-color);
+}
+
+
+.carousel-controls .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel-controls .btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.testimonios {
+ width: 100%;
+}
+
+.integrante {
+    flex: 0 0 220px;     /* ancho fijo para el carrusel */
+    max-width: 280px;
+    height: 270px;
+    margin: 0 10px;
+    color: var(--level2_color);
+}
+
+
+
+.integrante img {
+    width: 100px;
+}
+
+.integrante p, .integrante a {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.integrante .boton {
+    background-color: var(--level1_color);
+    width: 80px;
+    border-radius: 5px;
+
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+
+}
+
+.boton img {
+    width: 30px;
+}
+
+/* ********** EQUIPO ********** */
+.equipo h2 {
+        padding-bottom: 2rem;
+}
+
+.equipo-carousel-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.equipo-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.equipo-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.equipo-carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 1rem;
+}
+
+/* ********** CONTADORES ********** */
+.contador {
+    width: 280px;
+}
+
+.contador span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--level1_color);
+}
+
+
+/* ********** PREGUNTAS FRECUENTES ********** */
+.preguntas {
+    background-color: var(--alice_color);
+    color: var(--alice_color);
+}
+
+.contenedor-preguntas {
+        background-color: var(--level2_color);
+}
+
+.preguntas button {
+    background-color: var(--level2_color);
+    color: var(--alice_color);
+     border: none;
+    border-top: 1px solid #FFFFFF40;
+    border-radius: 0px;   
+}
+
+.preguntas button h3 {
+    text-align: left;
+}
+
+.cierre button {
+    background-color: var(--level2_color);
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-radius: 1rem;
+    color: var(--alice_color);
+    border: none;
+
+}
+
+.faq-answer {
+    background-color: var(--level2_color);
+    color: var(--alice_color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ********** FOOTER ********** */
+footer {
+    background-color: var(--primary-color);
+}
+.final {
+    color: var(--alice_color);
+}
+
+.logos {
+    width: 320px;
+}
+
+.logos img {
+    width: 50px;
+    height: 50px
+}
+
+.legales li {
+    padding-top: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+ /* ***********  */
+.vmodal {
+  position: fixed;
+  inset: 0;
+  display: grid;   /* ✅ SIEMPRE visible cuando existe */
+  place-items: center;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+}
+
+
+.vbox {
+  position: relative;
+  background: #000; /* mejor contraste */
+  border-radius: 10px;
+  width: 90vw;          /* 90% del ancho visible */
+  max-width: 800px;     /* límite absoluto */
+  max-height: 90vh;     /* que no sobrepase la altura visible */
+  overflow: hidden;
+}
+
+.vbox video {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;     /* evita desbordes verticales */
+  display: block;
+  border-radius: 8px;
+}
+
+.vclose {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+
+
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    h1 {
+        padding-top: 5rem;
+        font-size: 4rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    p, li, a {
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        padding-bottom: 0.5rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .width-md-80 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .enganche p {
+        padding: 2rem;
+        line-height: 3.5rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .enganche li {
+        font-size: 2.5rem;
+        padding-bottom: 1.7rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .integrante {
+       height: 300px;
+    }
+
+    .equipo h2 {
+        padding-bottom: 3rem;
+    }
+
+    .contador {
+        padding: 0px 1rem;
+    }
+
+    .contador p{
+        padding: 0px 1rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .contenedor-preguntas {
+        background-color: var(--level2_color);
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 4rem;
+        border-radius: 1rem;
+    }
+
+    .legales li {
+        font-size: 1.5rem;
+    }
+
+    .final a, .email-contacto a, .email-contacto p {
+        
+        font-size: 1.7rem;
+    }
+
+    .carousel-container {
+        width: calc(240px * 3);   /* 3 cards */
+    }
+
+    .equipo-carousel-wrapper {
+    width: 70%;
+  }
+}

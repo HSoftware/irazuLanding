@@ -1,0 +1,11 @@
+header {
+    background-color: var(--primary-color);
+}
+
+ .image-yrazu {
+        width: 340px;
+    }
+
+.globe-life, .carta-bussiness {
+    width: 200px;
+}
