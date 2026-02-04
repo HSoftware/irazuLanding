@@ -17,7 +17,6 @@ function App() {
       <Header />
       <Enganche />
       <Formulario />
-      <hr />
       <Respaldo />
       <hr />
       <PropuestaValor />

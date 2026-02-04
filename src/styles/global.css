@@ -7,6 +7,7 @@
 --alice_color: white;  /* aliceblue */
 --level5_color: #62a8a5;
 --gold_color: #af924c;
+--beige_color: #D6C3B9;
 } 
 
 html {
@@ -38,8 +39,9 @@ h2 {
 }
 
 h3 {
+    font-family: "DM Sans", sans-serif;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -75,22 +77,29 @@ p, li, a, label {
 
 
 /* ********** FORMULARIO ********** */
-.formulario {
-    background-color: var(--alice_color);
+.formulario-section{
+    padding: 24px 0px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
 }
 
-.formulario .preguntas {
+.formulario {
+    width: 70%;
     margin: 0 auto;
-    padding: 5rem 5rem 1rem;
-    background-color: var(--alice_color);
-    color: var(--level2_color);
-    width: 95%;
+    border: 1px solid var(--gold_color);
+    border-radius: 1rem;
     min-width: 360px;
     max-width: 540px;
-    border-top: 1rem solid ;
-    border-bottom: 1rem solid;
-    border-left: 3rem solid;
-    border-right: 3rem solid;
+}
+.formulario .preguntas {
+    padding: 3rem;
+    background-color: var(--beige_color);
+    color: var(--level2_color);
+    width: 100%;
+    min-width: 360px;
+    max-width: none;
+    border: 5px solid;
     border-radius: 1rem;
 
 }
@@ -111,8 +120,8 @@ p, li, a, label {
 
 /* ********** PROPUESTA ********** */
 .respaldo {
-    background-color: var(--level2_color);
-    color: var(--alice_color);
+    background-color: var(--primary-color);
+    color: var(--gold_color);
 }
 
 

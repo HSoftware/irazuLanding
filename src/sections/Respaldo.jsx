@@ -1,13 +1,19 @@
+import separador02 from "../assets/images/separador02.png"
 
 
 export default function Respaldo() {
 return (
-  <div className="respaldo mt-5 pt-2 pb-5">
+  <div className="respaldo pt-2 pb-5">
+    <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
+        
       <h3 className="mt-5 px-3 py-md-5">
           Respaldado por American Income Life
-          <br /><br />
+        </h3>
+        <br /><br />
+        <p className="text-center">
           Compañia con más de 70 años de trayectoria y máxima acreditación en la industria financiera de Estados Unidos
-      </h3>
+        </p>
+      
   </div>
   )
 }
