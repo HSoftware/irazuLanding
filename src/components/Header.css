@@ -1,11 +1,46 @@
+
 header {
+    width: 100%;
+}
+nav {
     background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
- .image-yrazu {
-        width: 340px;
+ .firma-yrazu {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 340px;
     }
 
 .globe-life, .carta-bussiness {
+    padding-top: 10px;
+    padding-bottom: 20px;
     width: 200px;
+}
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+
+}.firma-yrazu {
+    padding-left: 50px;
+    width: 400px;
+    }
+
+.globe-life, .carta-bussiness {
+    padding-right: 50px;
+    width: 300px;
 }

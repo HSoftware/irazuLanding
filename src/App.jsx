@@ -15,9 +15,7 @@ function App() {
   return (
     <>
       <Header />
-      <hr />
       <Enganche />
-      <hr />
       <Formulario />
       <hr />
       <Respaldo />

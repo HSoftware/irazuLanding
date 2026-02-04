@@ -6,6 +6,7 @@
 --level4_color: #011514;
 --alice_color: white;  /* aliceblue */
 --level5_color: #62a8a5;
+--gold_color: #af924c;
 } 
 
 html {
@@ -56,12 +57,20 @@ p, li, a, label {
 
 /* ********** ENGANCHE ********** */
 .enganche {
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--gold_color);
 }
-
-.star {
-    width: 20px;
-    height: 20px;
+.separador {
+    width: 80%;
+    height: auto; 
+}
+.separador02 {
+    width: 60%;
+    height: auto; 
+}
+.star02 {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -417,8 +426,9 @@ footer {
         text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
     }
 
+
     .width-md-80 {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
     }
 
