@@ -79,6 +79,7 @@ return (
         Ellos ya transformaron su vida <br />
         Inspírate con su experiencia
     </h2>
+    <br />
 
     <div className="carousel-container overflow-hidden">
 

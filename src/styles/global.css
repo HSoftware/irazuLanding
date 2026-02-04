@@ -128,23 +128,22 @@ p, li, a, label {
 /* ********** PROPUESTA ********** */
 
 .propuesta-valor {
-    background-color: var(--alice_color);
+    background-color: var(--beige_color);
+    padding: 24px; 
 }
-
 
 .emparejados img {
     min-width: 290px;
 }
 
-
 /* ********** TESTIMONIOS ********** */
 .prueba-social {
-    background-color: var(--level2_color);
-    color: var(--alice_color);
+    background-color: var(--primary-color);
+    color: var(--beige_color);
 }
 
 .prueba-social h2 {
-    color:var(--alice_color);
+    color:var(--beige_color);
 }
 
 .carouselContainer {
@@ -184,12 +183,12 @@ p, li, a, label {
 
 .carousel-controls .btn:hover {
   background-color: var(--level5_color);
-  color: var(--primary-color);
+  color: var(--beige_color);
 }
 
 
 .carousel-controls .btn {
-  background-color: var(--primary-color);
+  background-color: var(--level3_color);
   color: #fff;
   border: none;
   width: 48px;

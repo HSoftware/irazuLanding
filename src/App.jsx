@@ -18,9 +18,7 @@ function App() {
       <Enganche />
       <Formulario />
       <Respaldo />
-      <hr />
       <PropuestaValor />
-      <hr />
       <Testimonios />
       <hr />
       <Equipo />
