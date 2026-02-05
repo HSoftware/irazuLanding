@@ -79,19 +79,19 @@ return (
         {/* CARRUSEL */}
         <div className="equipo-carousel-wrapper">
             <div className="equipo-carousel">
-            <div
-                ref={carouselRef}
-                className="equipo-carousel-track"
-            >
-                {images.map((img, i) => (
-                <img
-                    key={i}
-                    src={img}
-                    alt={`Foto equipo ${i + 1}`}
-                    loading="lazy"
-                />
-                ))}
-            </div>
+                <div
+                    ref={carouselRef}
+                    className="equipo-carousel-track"
+                >
+                    {images.map((img, i) => (
+                    <img
+                        key={i}
+                        src={img}
+                        alt={`Foto equipo ${i + 1}`}
+                        loading="lazy"
+                    />
+                    ))}
+                </div>
             </div>
 
                 <div className="carousel-controls mt-3">

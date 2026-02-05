@@ -7,7 +7,7 @@
 --alice_color: white;  /* aliceblue */
 --level5_color: #62a8a5;
 --gold_color: #af924c;
---beige_color: #D6C3B9;
+--beige_color: #E9D2BA; 
 } 
 
 html {
@@ -27,13 +27,13 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
 }
@@ -53,7 +53,49 @@ p, li, a, label {
 }
 
 /* ********** HEADER ********** */
+header {
+    width: 100%;
+}
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.firma-yrazu {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    width: 340px;
+}
+
+.globe-life, .carta-bussiness {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .firma-yrazu {
+        width: 400px;
+        }
+
+    .globe-life, .carta-bussiness {
+        width: 300px;
+    }
+}
 
 /* ********** MAIN ********** */
 
@@ -62,12 +104,16 @@ p, li, a, label {
     background-color: var(--primary-color);
     color: var(--gold_color);
 }
+.enganche p {
+    color: var(--beige_color);
+}
 .separador {
-    width: 80%;
+    width: 90%;
     height: auto; 
 }
 .separador02 {
-    width: 60%;
+    margin-top: 20px;
+    width: 70%;
     height: auto; 
 }
 .star02 {
@@ -85,20 +131,18 @@ p, li, a, label {
 }
 
 .formulario {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    border: 1px solid var(--gold_color);
+    border: 2px solid var(--gold_color);
     border-radius: 1rem;
-    min-width: 360px;
-    max-width: 540px;
-}
+    min-width: 320px;
+    max-width: 410px;
+    }
 .formulario .preguntas {
     padding: 3rem;
     background-color: var(--beige_color);
     color: var(--level2_color);
-    width: 100%;
-    min-width: 360px;
-    max-width: none;
+
     border: 5px solid;
     border-radius: 1rem;
 
@@ -112,18 +156,25 @@ p, li, a, label {
 .formulario .preguntas button {
     background-color: var(--level2_color);
     border-radius: 1rem;
+    width: 100px;
+    font-size: 1.5rem;
 }
 
 .formulario .preguntas .microtexto {
     font-size: 1.2rem;
 }
 
-/* ********** PROPUESTA ********** */
+/* ********** RESPALDO ********** */
+
 .respaldo {
     background-color: var(--primary-color);
     color: var(--gold_color);
 }
 
+.texto-respaldo {
+    width: 80%;
+    margin: 0 auto;
+}
 
 /* ********** PROPUESTA ********** */
 
@@ -247,8 +298,13 @@ p, li, a, label {
 }
 
 /* ********** EQUIPO ********** */
+.equipo {
+    background-color: var(--beige_color);
+
+}
 .equipo h2 {
         padding-bottom: 2rem;
+        color: var(--primary-color);
 }
 
 .equipo-carousel-wrapper {
@@ -276,6 +332,9 @@ p, li, a, label {
 .contador {
     width: 280px;
 }
+.contador p {
+    color: var(--primary-color);
+}
 
 .contador span {
     font-size: 4rem;
@@ -286,19 +345,19 @@ p, li, a, label {
 
 /* ********** PREGUNTAS FRECUENTES ********** */
 .preguntas {
-    background-color: var(--alice_color);
-    color: var(--alice_color);
+    background-color:var(--primary-color);
+    color: var(--beige_color);
 }
 
 .contenedor-preguntas {
-        background-color: var(--level2_color);
+        background-color: var(--primary-color);
 }
 
 .preguntas button {
-    background-color: var(--level2_color);
-    color: var(--alice_color);
-     border: none;
-    border-top: 1px solid #FFFFFF40;
+    background-color: var(--primary-color);
+    color: var(--beige_color);
+    border: none;
+    border-top: 1px solid var(--gold_color);
     border-radius: 0px;   
 }
 
@@ -306,12 +365,16 @@ p, li, a, label {
     text-align: left;
 }
 
+
+.cierre {
+    background-color: var(--beige_color);
+}
 .cierre button {
-    background-color: var(--level2_color);
+    background-color: var(--primary-color);
     margin-top: 1rem; 
     padding: 1rem; 
     border-radius: 1rem;
-    color: var(--alice_color);
+    color: var(--beige_color);
     border: none;
 
 }

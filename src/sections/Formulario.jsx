@@ -129,7 +129,11 @@ export default function Formulario() {
                         <button type="submit" className="btn btn-primary btn-lg d-block mx-auto">Enviar</button>
                         
                         <div className="mt-3 text-center">
-                            <p className="microtexto">Respuesta en menos de 24 horas. Tu información es privada.</p>
+                            <p className="microtexto">
+                                Respuesta en menos de 24 horas. 
+                                <br />
+                                Tu información es privada.
+                            </p>
                         </div> 
                         
                     </form>

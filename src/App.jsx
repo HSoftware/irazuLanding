@@ -20,13 +20,9 @@ function App() {
       <Respaldo />
       <PropuestaValor />
       <Testimonios />
-      <hr />
       <Equipo />
-      <hr />
       <FAQ />
-      <hr />
       <Cierre /> 
-      <hr />
       <Footer />
     </>
   )

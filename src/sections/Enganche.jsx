@@ -5,7 +5,7 @@ import separador02 from "../assets/images/separador02.png"
 
 export default function Enganche() {
 return (
-  <section className="enganche d-flex flex-column align-items-center pt-5 pb-4 pl-4 pr-4">
+  <section className="enganche d-flex flex-column align-items-center pt-3 pb-4 pl-4 pr-4">
     <h1 className="text-center">
         Construye tu carrera sin límites en la industria financiera
     </h1>
@@ -24,19 +24,31 @@ return (
             
             <p className="text-md-left pt-4 pl-5">
                 <img src={star02} alt="star" className="star02" />
+                Capacitación desde cero
+            </p>
+            <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
+            
+            <p className="text-md-left pt-4 pl-5">
+                <img src={star02} alt="star" className="star02" />
+                Mentoría en vivo semanal.
+            </p>
+            <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
+            
+            <p className="text-md-left pt-4 pl-5">
+                <img src={star02} alt="star" className="star02" />
                 Bonos de acuerdo con tus metas
             </p>
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
             <p className="text-md-left pt-4 pl-5">
                 <img src={star02} alt="star" className="star02" />
-                Plataforma digital flexible y gratuita
+                Acceso a una Plataforma de Organización Financiera. 
             </p>
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
             <p className="text-md-left pt-4 pl-5">
                 <img src={star02} alt="star" className="star02" />
-                Capacitación desde cero
+                Apoyo y asesoría en creación de Marca Personal y Redes Sociales
             </p>
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
 

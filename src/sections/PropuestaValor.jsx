@@ -13,12 +13,13 @@ return (
 
           <div className="sobre-yrazu col-12 col-md-6 pt-5 px-4">
             <p>
-                <strong>Yrazú Carmona</strong>. Mamá, esposa y líder con propósito. <br />
-                En mi 1er año de carrera logré obtener ingresos superiores a $130,000 
+                <strong>Yrazú Carmona</strong>. Mamá, esposa y líder con propósito.
             </p>
-              <p>
-                  Como inmigrante, construí mi carrera liderando equipos latinos en la industria financiera; hoy estos equipos crecen con un propósito, objetivos claros y comunidad. Te acompaño con mentoría real, práctica y constante, porque aquí no caminas solo. 
-              </p>
+            <p>
+                Como inmigrante, construí mi carrera liderando equipos latinos en la industria 
+                financiera; hoy estos equipos crecen con un propósito, objetivos claros y comunidad. 
+                Te acompaño con mentoría real, práctica y constante, porque aquí no caminas solo. 
+            </p>
               
               <p className="mx-auto w-75">
                   &#10003; Agente certificada <br/>
