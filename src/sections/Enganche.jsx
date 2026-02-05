@@ -16,40 +16,59 @@ return (
     
     <div className="d-flex flex-column flex-md-row">
         <div className="pl-md-5">
-            <p className="text-md-left pt-2 pl-5">
+            
+            <div className="linea">
                 <img src={star02} alt="star" className="star02" />
-                Comunidad latina que trabaja en español, desde cualquier lugar
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Comunidad latina que trabaja en español, desde cualquier lugar
+                </p>
+            </div>
+            
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
-            <p className="text-md-left pt-4 pl-5">
+            <div className="linea pt-4">
                 <img src={star02} alt="star" className="star02" />
-                Capacitación desde cero
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Capacitación desde cero
+                </p>
+            </div>
+
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
-            <p className="text-md-left pt-4 pl-5">
+            <div className="linea pt-4">
                 <img src={star02} alt="star" className="star02" />
-                Mentoría en vivo semanal.
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Mentoría en vivo semanal.
+                </p>
+            </div>
+
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
-            <p className="text-md-left pt-4 pl-5">
+            <div className="linea pt-4">
                 <img src={star02} alt="star" className="star02" />
-                Bonos de acuerdo con tus metas
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Bonos de acuerdo con tus metas
+                </p>
+            </div>
+
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
-            <p className="text-md-left pt-4 pl-5">
+            <div className="linea pt-4">
                 <img src={star02} alt="star" className="star02" />
-                Acceso a una Plataforma de Organización Financiera. 
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Acceso a una Plataforma de Organización Financiera. 
+                </p>
+            </div>
+
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
             
-            <p className="text-md-left pt-4 pl-5">
+            <div className="linea pt-4">
                 <img src={star02} alt="star" className="star02" />
-                Apoyo y asesoría en creación de Marca Personal y Redes Sociales
-            </p>
+                <p className="text-md-left pt-2 pl-1">
+                    Apoyo y asesoría en creación de Marca Personal y Redes Sociales
+                </p>
+            </div>
+
             <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
 
         </div>        

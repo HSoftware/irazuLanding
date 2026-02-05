@@ -1,4 +1,4 @@
-import irazu from "../assets/images/Yrazu01.jpg" 
+import yrazu from "../assets/images/Yrazu02.jpeg" 
 
 export default function PropuestaValor() {
 return (
@@ -8,7 +8,7 @@ return (
       <div className="emparejados row px-5">
 
           <div className="foto-Yrazu d-flex align-items-center col-12 col-md-6 media ">
-              <img src={irazu} alt="Foto Yrazú Carmona" />
+              <img src={yrazu} alt="Foto Yrazú Carmona" />
           </div>
 
           <div className="sobre-yrazu col-12 col-md-6 pt-5 px-4">
