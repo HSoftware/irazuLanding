@@ -15,9 +15,13 @@ function App() {
   return (
     <>
       <Header />
-      <Enganche />
-      <Formulario />
-      <Respaldo />
+        <div className="introSection">
+            <div className="introContent">
+              <Enganche />
+              <Respaldo />
+            </div>
+          <Formulario />
+        </div>
       <PropuestaValor />
       <Testimonios />
       <Equipo />
