@@ -12,11 +12,11 @@ import separador02 from "../assets/images/separador02.png"
 export default function Footer() {
 return (
   <footer className="p-5">
-      <div className="final d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+      <div className="final">
           
           <div className="logos-contenedor">
               <h2>¡Sígueme!</h2>
-                <div className="logos d-flex w-100 justify-center">
+                <div className="logos d-flex justify-center">
                     <a href="https:"><span className="wasap px-3"> 
                         <BsWhatsapp size="35px"/>
                     </span></a>
@@ -50,7 +50,7 @@ return (
 
           <div className="email-contacto text-center text-md-right">
               <a href="mailto:teamyrazu@gmail.com">teamyrazu@gmail.com</a>
-              <p className="font-weight-bold pt-4">
+              <p className="font-weight-bold pt-4 text-center">
                   Yrazú Carmona Website <br />
                   Copyright © 2025 
               </p>

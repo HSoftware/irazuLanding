@@ -7,7 +7,7 @@ return (
     <img src={separador02} alt="" className="separador02 img-fluid mx-auto d-block"/>
         
     <div className="texto-respaldo">
-      <h3 className="mt-5 px-3 py-md-5">
+      <h3 className="mt-5 px-3 py-md-3">
         Respaldado por American Income Life
       </h3>
       <br />
