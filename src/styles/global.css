@@ -8,6 +8,9 @@
 --level5_color: #62a8a5;
 --gold_color: #af924c;
 --beige_color: #E9D2BA; 
+--header_color_background: #025951;
+--hero_color_background: #f1e9dd;
+--enganche_color_background: #f1e9dd;
 } 
 
 html {
@@ -56,7 +59,7 @@ p, li, a, label {
 /* ********** HEADER ********** */
 header {
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--header_color_background);
 
 }
 nav {
@@ -82,6 +85,9 @@ nav {
 
 
 /* ********** HERO ********** */
+.HeroSection {
+    background-color: var(--hero_color_background);
+}
 .HeroTitle {
         color: var(--gold_color);
         display: flex;
@@ -93,11 +99,10 @@ nav {
 
 /* ********** ENGANCHE ********** */
 .enganche {
-    background-color: var(--primary-color);
-    color: var(--gold_color);
+     color: var(--gold_color);
 }
 .enganche p {
-    color: var(--beige_color);
+    color: var(--gold_color);
 }
 .separador {
     width: 90%;
@@ -123,7 +128,7 @@ nav {
 .formulario-section{
     width: 100%;
     padding: 24px 0px;
-    background-color: var(--primary-color);
+    background-color: var(--hero_color_background);
     display: flex;
     justify-content: center;
 }
@@ -167,8 +172,8 @@ nav {
 
 .formulario .preguntas {
     padding: 3rem;
-    background-color: var(--beige_color);
-    color: var(--level2_color);
+    background-color: var(--level2_color);
+    color: var(--beige_color);
 
     border: 0px solid;
     border-radius: 1rem;
@@ -181,7 +186,7 @@ nav {
 }
 
 .formulario .preguntas button {
-    background-color: var(--level2_color);
+    color: var(--level2_color);
     border-radius: 1rem;
     width: 100px;
     font-size: 1.5rem;
@@ -189,6 +194,10 @@ nav {
 
 .formulario .preguntas .microtexto {
     font-size: 1.2rem;
+}
+
+.cartaBussinesLogo {
+    width: 350px;
 }
 
 /* ********** RESPALDO ********** */

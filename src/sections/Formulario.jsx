@@ -1,3 +1,4 @@
+import cartaBussines from "../assets/images/CartaBussinesLogo.png"
 import { useState } from "react"
 
 export default function Formulario() {
@@ -30,7 +31,8 @@ export default function Formulario() {
             <section id="form-aplicar" className="formulario d-flex flex-column align-items-center ">
 
                 <div className="preguntas">
-                    <h2 id="aplicar">Aplica aquí</h2>
+                          <img src={cartaBussines} alt="Logo Carta Bussines" className="cartaBussinesLogo" />
+                    
                     
                     <form  
                         action="https://formspree.io/f/xblapdko" 
@@ -126,7 +128,7 @@ export default function Formulario() {
                             </div>
                         </div>
                         
-                        <button type="submit" className="btn btn-primary btn-lg d-block mx-auto">Enviar</button>
+                        <button type="submit" className="btn btn-gold d-block mx-auto">Enviar</button>
                         
                         <div className="mt-3 text-center">
                             <p className="microtexto">
