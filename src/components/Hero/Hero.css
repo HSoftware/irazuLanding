@@ -1,0 +1,131 @@
+
+/* ********** HERO ********** */
+.HeroSection {
+    background-color: var(--hero_color_background);
+}
+.HeroTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 25px 0px;
+        color: var(--level2 _color);
+    }
+
+.separador {
+    width: 100%;
+    height: auto; 
+    padding-top: 5px;
+}
+
+/* ********** ENGANCHE ********** */
+.enganche {
+     color: var(--level2 _color);
+}
+
+.separador02 {
+    margin-top: 20px;
+    height: auto; 
+}
+.star02 {
+    width: 30px;
+    height: 30px;
+}
+.linea {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+}
+
+
+/* ********** FORMULARIO ********** */
+.formulario-section{
+    width: 100%;
+    padding: 24px 0px;
+    background-color: var(--hero_color_background);
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  min-width: 320px;
+  max-width: 400px;
+  border: 0;                 /* el borde lo hace ::before */
+  overflow: hidden;          /* para respetar el radio */
+  padding: 4px;
+  overflow: hidden;
+}
+
+.formulario::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px;              /* grosor del “borde” */
+  border-radius: inherit;
+
+  background: linear-gradient(135deg,
+    #6e5a2b 0%,
+    #8f7637 18%,
+    #af924c 40%,
+    #d8bf7a 55%,
+    #af924c 72%,
+    #8f7637 88%,
+    #6e5a2b 100%);
+
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+
+.formulario .preguntas {
+    padding: 3rem;
+    background-color: var(--header_color_background);
+    color: var(--beige_color);
+
+    border: 0px solid;
+    border-radius: 1rem;
+
+}
+
+.formulario .preguntas input{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.formulario .preguntas button {
+    color: var(--level2_color);
+    border-radius: 1rem;
+    width: 100px;
+    font-size: 1.5rem;
+}
+
+.formulario .preguntas .microtexto {
+    font-size: 1.2rem;
+}
+
+.cartaBussinesLogo {
+    width: 350px;
+}
+
+/* ********** RESPALDO ********** */
+
+.respaldo {
+    background-color: var(--page_color_background);
+    color: var(--gold_color);
+
+}
+
+.texto-respaldo {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--gold_color);
+}

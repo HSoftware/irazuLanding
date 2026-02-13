@@ -1,0 +1,75 @@
+
+/* ********** PROPUESTA ********** */
+
+.propuesta-valor {
+    background: linear-gradient(180deg, #F1e9dd 0%, #ede2cc 45%, #EADAC6 100%);
+    padding: 0px 24px; 
+}
+.tituloPropuesta, .protagonista{
+    text-align: center;
+    padding: 18px;
+}
+
+.protagonista {
+    color: var(--gold_color);
+}
+
+.emparejados {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bordeExternoFoto {
+    width: 320px;
+    height: 480px;
+    border-radius: 50%;
+    border: 5px solid var(--gold_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.bordeInternoFoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--darkGreen_color);
+    overflow: hidden;          /* recorta la imagen al óvalo */
+    box-sizing: border-box;
+}
+
+.bordeInternoFoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.listaPropuesta {
+    list-style: none;
+}
+
+.itemListaPropuesta {
+    display: flex;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .emparejados {
+        flex-direction: row;
+
+    }
+
+  
+
+    .sobre_yrazu {
+        padding: 24px;
+    }
+}

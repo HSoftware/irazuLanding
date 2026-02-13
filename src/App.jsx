@@ -1,11 +1,12 @@
 import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
+import Hero from "./components/Hero/Hero"
 import Cierre from "./sections/Cierre"
 import Equipo from "./sections/Equipo"
 import FAQ from "./sections/FAQ"
-import PropuestaValor from "./sections/PropuestaValor"
+import PropuestaValor from "./components/Propuesta/PropuestaValor"
 import Testimonios from "./sections/Testimonios"
-import Hero from "./components/Hero"
+
 
 function App() {
 

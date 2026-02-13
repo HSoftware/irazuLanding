@@ -10,7 +10,7 @@
 --beige_color: #E9D2BA; 
 --header_color_background: #025951;
 --hero_color_background: #f1e9dd;
---enganche_color_background: #f1e9dd;
+--page_color_background: #f1e9dd;
 --lightGold_color: #E6D7A8;
 --beigeGold_color: #D6C38F;
 --darkGreen_color: #094d4b;
@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--beige_color);
+    background-color: var(--hero_color_background);
 
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.7em
     font-weight: 700;
     text-align: center;
 }
@@ -60,221 +60,8 @@ p, li, a, label {
     line-height: 2.2rem;
 }
 
-/* ********** HEADER ********** */
-header {
-    width: 100%;
-    background-color: var(--header_color_background);
-
-}
-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.firma-yrazu {
-    padding-top: 40px;
-    padding-bottom: 15px;
-    width: 340px;
-}
-
-.globe-life, .carta-bussiness {
-    padding-top: 15px;
-    padding-bottom: 20px;
-    width: 200px;
-}
 
 
-
-/* ********** HERO ********** */
-.HeroSection {
-    background-color: var(--hero_color_background);
-}
-.HeroTitle {
-        color: var(--gold_color);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
-    }
-
-/* ********** ENGANCHE ********** */
-.enganche {
-     color: var(--gold_color);
-}
-.enganche p {
-    color: var(--gold_color);
-}
-.separador {
-    width: 90%;
-    height: auto; 
-}
-.separador02 {
-    margin-top: 20px;
-    height: auto; 
-}
-.star02 {
-    width: 30px;
-    height: 30px;
-}
-.linea {
-    display: flex;
-    align-items: start;
-    justify-content: left;
-    
-}
-
-
-/* ********** FORMULARIO ********** */
-.formulario-section{
-    width: 100%;
-    padding: 24px 0px;
-    background-color: var(--hero_color_background);
-    display: flex;
-    justify-content: center;
-}
-
-.formulario{
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 1rem;
-  min-width: 320px;
-  max-width: 400px;
-  border: 0;                 /* el borde lo hace ::before */
-  overflow: hidden;          /* para respetar el radio */
-}
-
-.formulario::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 4px;              /* grosor del “borde” */
-  border-radius: inherit;
-
-  background: linear-gradient(135deg,
-    #6e5a2b 0%,
-    #8f7637 18%,
-    #af924c 40%,
-    #d8bf7a 55%,
-    #af924c 72%,
-    #8f7637 88%,
-    #6e5a2b 100%);
-
-  -webkit-mask: 
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-
-  pointer-events: none;
-}
-
-
-.formulario .preguntas {
-    padding: 3rem;
-    background-color: var(--level2_color);
-    color: var(--beige_color);
-
-    border: 0px solid;
-    border-radius: 1rem;
-
-}
-
-.formulario .preguntas input{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.formulario .preguntas button {
-    color: var(--level2_color);
-    border-radius: 1rem;
-    width: 100px;
-    font-size: 1.5rem;
-}
-
-.formulario .preguntas .microtexto {
-    font-size: 1.2rem;
-}
-
-.cartaBussinesLogo {
-    width: 350px;
-}
-
-/* ********** RESPALDO ********** */
-
-.respaldo {
-    background-color: var(--darkGreen_color);
-    color: var(--lightGold_color);
-
-}
-
-.texto-respaldo {
-    width: 80%;
-    margin: 0 auto;
-    color: var(--beigeGold_color);
-}
-
-/* ********** PROPUESTA ********** */
-
-.propuesta-valor {
-    background: linear-gradient(180deg, #FAF4EA 0%, #F6EFE4 45%, #EADAC6 100%);
-    padding: 24px; 
-}
-.emparejados {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.bordeExternoFoto {
-    width: 320px;
-    height: 480px;
-    border-radius: 50%;
-    border: 5px solid var(--gold_color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-
-}
-
-.bordeInternoFoto {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 4px solid var(--darkGreen_color);
-    overflow: hidden;          /* recorta la imagen al óvalo */
-    box-sizing: border-box;
-}
-
-.bordeInternoFoto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-@media (min-width: 768px) {
-    .emparejados {
-        flex-direction: row;
-
-    }
-
-  
-
-    .sobre_yrazu {
-        padding: 24px;
-    }
-}
 
 
 /* ********** TESTIMONIOS ********** */
@@ -297,7 +84,6 @@ nav {
   margin: 0 auto;
   overflow: hidden;
 }
-
 
 .carousel-controls {
   display: flex;
@@ -360,8 +146,6 @@ nav {
     color: var(--level2_color);
 }
 
-
-
 .integrante img {
     width: 100px;
 }
@@ -385,6 +169,18 @@ nav {
 
 .boton img {
     width: 30px;
+}
+
+
+.cardImage {
+    width: 150;
+    height: 150;
+    object-fit: 'cover';
+}
+
+.testimonio {
+    color: white;
+    font-size: 15px;
 }
 
 /* ********** EQUIPO ********** */

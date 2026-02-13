@@ -1,5 +1,5 @@
-import star02 from "../assets/images/star02.png"
-import separador02 from "../assets/images/separador02.png"
+import star02 from "../../assets/images/star02.png"
+import separador02 from "../../assets/images/separador02.png"
 
 export default function Enganche() {
 return (

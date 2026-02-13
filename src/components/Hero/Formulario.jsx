@@ -1,4 +1,4 @@
-import cartaBussines from "../assets/images/CartaBussinesLogo.png"
+import cartaBussines from "../../assets/images/CartaBussinesLogo.png"
 import { useState } from "react"
 
 export default function Formulario() {

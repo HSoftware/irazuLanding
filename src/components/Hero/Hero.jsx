@@ -1,7 +1,8 @@
-import Enganche from "../sections/Enganche"
-import Formulario from "../sections/Formulario"
-import Respaldo from "../sections/Respaldo"
-import separador01 from "../assets/images/separador01.png"
+import Enganche from "./Enganche"
+import Formulario from "./Formulario"
+import Respaldo from "./Respaldo"
+import separador01 from "../../assets/images/separador01.png"
+import "./Hero.css"
 
 
 

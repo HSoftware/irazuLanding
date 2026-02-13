@@ -1,4 +1,4 @@
-import separador02 from "../assets/images/separador02.png"
+import separador02 from "../../assets/images/separador02.png"
 
 
 export default function Respaldo() {
