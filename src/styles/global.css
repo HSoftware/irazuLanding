@@ -233,10 +233,33 @@ nav {
     align-items: center;
 
 }
-.foto-Yrazu img {
+
+.bordeExternoFoto {
     width: 320px;
+    height: 480px;
     border-radius: 50%;
-    object-fit: cover; 
+    border: 5px solid var(--gold_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.bordeInternoFoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--darkGreen_color);
+    overflow: hidden;          /* recorta la imagen al óvalo */
+    box-sizing: border-box;
+}
+
+.bordeInternoFoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
@@ -245,6 +268,9 @@ nav {
         flex-direction: row;
 
     }
+
+  
+
     .sobre_yrazu {
         padding: 24px;
     }
