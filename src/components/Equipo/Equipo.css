@@ -1,0 +1,45 @@
+/* ********** EQUIPO ********** */
+.equipo {
+    background-color: var(--beige_color);
+
+}
+.equipo h2 {
+        padding-bottom: 2rem;
+        color: var(--primary-color);
+}
+
+.equipo-carousel-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.equipo-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.equipo-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.equipo-carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 1rem;
+}
+
+/* ********** CONTADORES ********** */
+.contador {
+    width: 280px;
+}
+.contador p {
+    color: var(--primary-color);
+}
+
+.contador span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--gold_color);
+}
+

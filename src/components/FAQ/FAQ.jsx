@@ -4,6 +4,7 @@ import { BsGlobeAmericas } from "react-icons/bs";
 import { BsCheckCircle } from "react-icons/bs";
 import { BsFileEarmarkText } from "react-icons/bs";
 import { BsPeople } from "react-icons/bs";
+import "./FAQ.css"
 
 
 import { BsDiagram3 } from "react-icons/bs";
@@ -62,7 +63,7 @@ return (
             >
             <div className="faq-header">
                 <span className="icon me-3">{faq.icon}</span>
-                <h3 className="py-4">{faq.question}</h3>
+                <h3 className="question">{faq.question}</h3>
                 <span className="faq-icon">
                 {openIndex === i ? "−" : "+"}
                 </span>

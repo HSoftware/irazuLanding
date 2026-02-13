@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react"
+import "./Equipo.css"
 
-import Team1 from "../assets/images/Team1.png"
-import Team2 from "../assets/images/Team2.png"
-import Team3 from "../assets/images/Team3.png"
+import Team1 from "../../assets/images/Team1.png"
+import Team2 from "../../assets/images/Team2.png"
+import Team3 from "../../assets/images/Team3.png"
 
 export default function Equipo() {
     const [index, setIndex] = useState(0)
