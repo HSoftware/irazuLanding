@@ -61,6 +61,11 @@
     gap: 8px;
 }
 
+.iconoDorado {
+    color: var(--gold_color);
+    font-weight: 700;
+}
+
 @media (min-width: 768px) {
     .emparejados {
         flex-direction: row;

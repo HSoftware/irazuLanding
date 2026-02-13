@@ -27,10 +27,10 @@ return (
             </p>
               <ul className="listaPropuesta">
                 <li className="itemListaPropuesta">
-                    <span>&#10003;</span> <span>Agente certificada</span>
+                    <span className="iconoDorado">&#10003;</span> <span>Agente certificada</span>
                 </li>
                 <li className="itemListaPropuesta">
-                    <span>&#10003;</span> <span>Ingresos e historias reales</span>
+                    <span className="iconoDorado">&#10003;</span> <span>Ingresos e historias reales</span>
                 </li>
               </ul>
               <p>

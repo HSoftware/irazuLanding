@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react'
 
-import sergio from "../assets/images/sergio.jpg"
-import patricia from "../assets/images/patricia.png"
-import Luis from "../assets/images/Luis.png"
+import sergio from "../../assets/images/sergio.jpg"
+import patricia from "../../assets/images/patricia.png"
+import Luis from "../../assets/images/Luis.png"
+import "./Testimonios.css"
 
 export default function Testimonios() {
   const [index, setIndex] = useState(0)
@@ -74,8 +75,8 @@ export default function Testimonios() {
 
   return (
     <section className="prueba-social p-5">
-      <h2>
-        Ellos ya transformaron su vida <br />
+      <h2 className='tituloPruebaSocial'>
+        Ellos ya <span className='goldenText'>transformaron su vida</span><br />
         Inspírate con su experiencia
       </h2>
       <br />
@@ -85,7 +86,7 @@ export default function Testimonios() {
           ref={carouselRef}
           className="d-flex"
           style={{ transition: 'transform 0.5s ease' }}
-        >
+        >|
           <div className="integrante card">
             <img className="card-img-top rounded-circle mx-auto pt-3" src={patricia} alt="Patricia Morales" />
             <div className="card-body text-center">
@@ -96,7 +97,7 @@ export default function Testimonios() {
               </p>
               <button
                 type="button"
-                className="boton py-2 px-3 d-block mx-auto testimonio"
+                className="py-2 px-3 d-block mx-auto testimonio"
                 onClick={() => setActiveTestimonial(TESTIMONIALS['Patricia Morales'])}
               >
                 Ver
@@ -114,7 +115,7 @@ export default function Testimonios() {
               </p>
               <button
                 type="button"
-                className="boton py-2 px-3 d-block mx-auto testimonio"
+                className="py-2 px-3 d-block mx-auto testimonio"
                 onClick={() => setActiveTestimonial(TESTIMONIALS['Luis Salazar'])}
               >
                 Ver
@@ -132,7 +133,7 @@ export default function Testimonios() {
               </p>
               <button
                 type="button"
-                className="boton py-2 px-3 d-block mx-auto testimonio"
+                className="py-2 px-3 d-block mx-auto testimonio"
                 onClick={() => setActiveTestimonial(TESTIMONIALS['Adriana Rangel'])}
               >
                 Ver
@@ -142,8 +143,7 @@ export default function Testimonios() {
         </div>
 
         <div className="carousel-controls text-center mt-3">
-          <button onClick={prev} className="btn mx-2">&lt;</button>
-          <button onClick={next} className="btn mx-2">&gt;</button>
+          <button onClick={prev} className="btn mx-2">&gt;</button>
         </div>
 
         {activeTestimonial && (

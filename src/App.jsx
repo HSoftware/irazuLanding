@@ -5,7 +5,7 @@ import Cierre from "./sections/Cierre"
 import Equipo from "./sections/Equipo"
 import FAQ from "./sections/FAQ"
 import PropuestaValor from "./components/Propuesta/PropuestaValor"
-import Testimonios from "./sections/Testimonios"
+import Testimonios from "./components/Testimonios/Testimonios"
 
 
 function App() {
