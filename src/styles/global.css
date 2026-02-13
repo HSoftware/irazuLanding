@@ -11,6 +11,10 @@
 --header_color_background: #025951;
 --hero_color_background: #f1e9dd;
 --enganche_color_background: #f1e9dd;
+--lightGold_color: #E6D7A8;
+--beigeGold_color: #D6C38F;
+--darkGreen_color: #094d4b;
+
 } 
 
 html {
@@ -22,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--primary-color);
+    background-color: var(--beige_color);
 
 }
 
@@ -203,19 +207,21 @@ nav {
 /* ********** RESPALDO ********** */
 
 .respaldo {
-    background-color: var(--primary-color);
-    color: var(--gold_color);
+    background-color: var(--darkGreen_color);
+    color: var(--lightGold_color);
+
 }
 
 .texto-respaldo {
     width: 80%;
     margin: 0 auto;
+    color: var(--beigeGold_color);
 }
 
 /* ********** PROPUESTA ********** */
 
 .propuesta-valor {
-    background-color: var(--beige_color);
+    background: linear-gradient(180deg, #FAF4EA 0%, #F6EFE4 45%, #EADAC6 100%);
     padding: 24px; 
 }
 .emparejados {
@@ -229,7 +235,10 @@ nav {
 }
 .foto-Yrazu img {
     width: 320px;
+    border-radius: 50%;
+    object-fit: cover; 
 }
+
 
 @media (min-width: 768px) {
     .emparejados {
