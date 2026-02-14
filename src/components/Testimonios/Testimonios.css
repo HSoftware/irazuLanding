@@ -117,3 +117,56 @@
     color: white;
     font-size: 15px;
 }
+
+
+ /* ***********  */
+.vmodal {
+  position: fixed;
+  inset: 0;
+  display: grid;   /* ✅ SIEMPRE visible cuando existe */
+  place-items: center;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+}
+
+
+.vbox {
+  position: relative;
+  background: #000; /* mejor contraste */
+  border-radius: 10px;
+  width: 90vw;          /* 90% del ancho visible */
+  max-width: 800px;     /* límite absoluto */
+  max-height: 90vh;     /* que no sobrepase la altura visible */
+  overflow: hidden;
+}
+
+.vbox video {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;     /* evita desbordes verticales */
+  display: block;
+  border-radius: 8px;
+}
+
+.vclose {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    .integrante {
+       height: 300px;
+    }
+
+    .carousel-container {
+      width: calc(240px * 3);   /* 3 cards */
+    }
+}

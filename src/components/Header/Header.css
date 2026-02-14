@@ -34,3 +34,18 @@ nav {
         justify-content: space-between; 
     }
 }
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .firma-yrazu {
+        width: 400px;
+    }
+}

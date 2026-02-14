@@ -4,7 +4,8 @@ import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
-import separador02 from "../assets/images/separador02.png"
+import separador02 from "../../assets/images/separador02.png"
+import "./Footer.css"
 
 
 

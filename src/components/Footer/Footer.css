@@ -1,0 +1,57 @@
+
+/* ********** FOOTER ********** */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer .separador {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold_color);
+}
+.final h2 {
+    padding: 12px;
+}
+
+.logos {
+    padding: 12px;
+    width: 320px;
+}
+
+.logos img {
+    width: 50px;
+    height: 50px
+}
+
+.legales li {
+    padding-top: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.legales a, .email-contacto a {
+    color: var(--gold_color);
+
+}
+
+.wasap, 
+.instagram,
+.facebook,
+.tictoc,
+.youtube {
+    color: var(--gold_color);
+}
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {  
+
+  .final .separador {
+    width: 60%;
+  }
+}

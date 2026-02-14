@@ -11,6 +11,7 @@
     margin: 50px auto;
     border-radius: 10px;
     border: 4px solid var(--gold_color);
+    
 }
 
 .preguntas button {
@@ -64,4 +65,15 @@
 
 .icon {
     padding-right: 20px;
+}
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+  
+    .contenedor-preguntas {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 4rem;
+        border-radius: 1rem;
+    }
 }

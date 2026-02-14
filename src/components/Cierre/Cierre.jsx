@@ -1,3 +1,4 @@
+import "./Cierre.css"
 
 export default function Cierre() {
 return (

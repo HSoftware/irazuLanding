@@ -129,3 +129,46 @@
     margin: 0 auto;
     color: var(--gold_color);
 }
+
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+    
+
+/* ********** INTROSECTION ********** */
+    .HeroSection {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .introSection {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .introContent {
+    display: flex;
+    flex-direction: row;
+   }
+
+   .formulario-section {
+    margin-top: auto;
+    margin-bottom: auto;
+   }
+
+    .enganche p {
+        padding: 0rem 2rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .enganche li {
+        font-size: 2.5rem;
+        padding-bottom: 1.7rem;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .separador02 {
+        margin-top: 5px;     
+    }   
+}

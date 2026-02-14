@@ -43,3 +43,25 @@
     color: var(--gold_color);
 }
 
+/* ********** PANTALLAS GRANDES ********** */
+@media (min-width: 768px) {
+  
+
+    .equipo h2 {
+        padding-bottom: 3rem;
+    }
+
+    .contador {
+        padding: 0px 1rem;
+    }
+
+    .contador p{
+        padding: 0px 1rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .equipo-carousel-wrapper {
+    width: 70%;
+  }
+}
