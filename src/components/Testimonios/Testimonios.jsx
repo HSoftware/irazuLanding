@@ -1,8 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
 
 import sergio from "../../assets/images/sergio.jpg"
-import patricia from "../../assets/images/patricia.png"
 import Luis from "../../assets/images/Luis.png"
+
+import adriana from "../../assets/images/sergio.jpg"
+import patricia from "../../assets/images/patricia.png"
+import francisco from "../../assets/images/Luis.png"
 import "./Testimonios.css"
 
 export default function Testimonios() {
@@ -75,156 +78,65 @@ export default function Testimonios() {
 
   return (
     <section className="prueba-social p-5">
+ 
+      {/* ************************************* sección de prueba **************************/}
+
       <h2 className='tituloPruebaSocial'>
         Ellos ya <span className='goldenText'>transformaron su vida</span><br />
         Inspírate con su experiencia
       </h2>
-      <br />
-
-      <div className="carousel-container overflow-hidden">
-        <div
-          ref={carouselRef}
-          className="d-flex"
-          style={{ transition: 'transform 0.5s ease' }}
-        >|
-          <div className="integrante card">
-            <img className="card-img-top rounded-circle mx-auto pt-3" src={patricia} alt="Patricia Morales" />
-            <div className="card-body text-center">
-              <h3>Patricia Morales</h3>
-              <p>
-                De los desafíos a las victorias <br />
-                SA
+      
+      <div className="marcoTestimonios">
+        <div className='cardTestimonio'>
+          <img className="cardImageTop" src={patricia} alt="Patricia Morales" />
+            <div className="cardBody">
+              <h3 className='memberName'>Patricia Morales</h3>
+              <p className='memberStatus'>SA</p>
+              <p className='descriptionText'>Después de cerrar una etapa profunda de mi vida, tuve que seguir adelante, aprender a reinventarme con disciplina y determinación.
+                Con casi 60 años, inicié esta carrera hoy cuento con resultados y reconocimientos que respaldan mi trabajo.
+                como Rookie Producer, Top Producer.
               </p>
-              <button
-                type="button"
-                className="py-2 px-3 d-block mx-auto testimonio"
-                onClick={() => setActiveTestimonial(TESTIMONIALS['Patricia Morales'])}
-              >
-                Ver
-              </button>
-            </div>
-          </div>
-
-          <div className="integrante card">
-            <img className="card-img-top rounded-circle mx-auto pt-3" src={Luis} alt="Luis Salazar" />
-            <div className="card-body text-center">
-              <h3>Luis Salazar</h3>
-              <p>
-                Una oportunidad que me transformó la vida <br />
-                SA
+              <p className='descriptionText'>
+                En mi primer año logré ingresos superiores a $100,000, reflejo de constancia y enfoque.
+                Mi historia demuestra que el crecimiento y los nuevos comienzos no tienen edad.
               </p>
-              <button
-                type="button"
-                className="py-2 px-3 d-block mx-auto testimonio"
-                onClick={() => setActiveTestimonial(TESTIMONIALS['Luis Salazar'])}
-              >
-                Ver
-              </button>
             </div>
-          </div>
-
-          <div className="integrante card">
-            <img className="card-img-top rounded-circle mx-auto pt-3" src={sergio} alt="Adriana Rangel" />
-            <div className="card-body text-center position-relative">
-              <h3>Adriana Rangel</h3>
-              <p>
-                De empleado a líder <br />
-                SGA
-              </p>
-              <button
-                type="button"
-                className="py-2 px-3 d-block mx-auto testimonio"
-                onClick={() => setActiveTestimonial(TESTIMONIALS['Adriana Rangel'])}
-              >
-                Ver
-              </button>
-            </div>
-          </div>
         </div>
-
-        <div className="carousel-controls text-center mt-3">
-          <button onClick={prev} className="btn mx-2">&gt;</button>
-        </div>
-
-        {activeTestimonial && (
-          <div
-            className="vmodal"
-            role="dialog"
-            aria-modal="true"
-            aria-label={`Testimonio de ${activeTestimonial.name}`}
-            onClick={() => setActiveTestimonial(null)}
-            style={{
-              position: 'fixed',
-              inset: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              background: 'rgba(0,0,0,.6)',
-              zIndex: 9999
-            }}
-          >
-            <div
-              className="vbox"
-              onClick={e => e.stopPropagation()}
-              style={{
-                background: '#fff',
-                padding: '20px',
-                borderRadius: '12px',
-                maxWidth: '520px',
-                width: '92%',
-                color: '#025951'
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                <button
-                  className="vclose"
-                  onClick={() => setActiveTestimonial(null)}
-                  style={{
-                    border: 'none',
-                    background: 'transparent',
-                    fontSize: '24px',
-                    lineHeight: 1,
-                    cursor: 'pointer',
-                    color: '#025951'
-                  }}
-                  aria-label="Cerrar"
-                >
-                  ×
-                </button>
-              </div>
-
-              <div style={{ textAlign: 'center' }}>
-                <img
-                  src={activeTestimonial.image}
-                  alt={activeTestimonial.alt}
-                  style={{
-                    width: '150px',
-                    height: '150px',
-                    objectFit: 'cover',
-                    borderRadius: '999px',
-                    display: 'block',
-                    margin: '0 auto 12px'
-                  }}
-                />
-
-                <h3 style={{ marginBottom: '6px', color: '#025951' }}>
-                  {activeTestimonial.name}
-                </h3>
-                <p style={{ marginBottom: '14px', color: '#025951' }}>
-                  <strong>{activeTestimonial.role}</strong>
-                </p>
-
-                <p style={{ marginBottom: '10px', color: '#025951' }}>
-                  {activeTestimonial.paragraphs[0]}
-                </p>
-                <p style={{ marginBottom: 0, color: '#025951' }}>
-                  {activeTestimonial.paragraphs[1]}
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
+
+      <div className="marcoTestimonios">
+        <div className='cardTestimonio'>
+          <img className="cardImageTop" src={francisco} alt="Patricia Morales" />
+            <div className="cardBody">
+              <h3 className='memberName'>Francisco Zambrano</h3>
+              <p className='memberStatus'>SA</p>
+              <p className='descriptionText'>
+                Después de pasar por muchos trabajos donde el esfuerzo nunca fue recompensado, decidí empezar esta carrera profesional en Carta Business Group.
+              </p>
+              <p className='descriptionText'>
+                Antes de dar ese paso, lo perdí todo: fui desalojado, caí en quiebra y junto a mi esposa y mis dos hijos tuve que dormir en un hotel. Llegué a Las Vegas gracias al apoyo de mis supervisores, porque ni siquiera tenía para los pasajes. Empecé desde cero, con miedo pero con determinación. Hoy, gracias a la constancia y la perseverancia, he logrado resultados que un día parecían imposibles.
+              </p>
+            
+            </div>
+        </div>
+      </div>
+
+      <div className="marcoTestimonios">
+        <div className='cardTestimonio'>
+          <img className="cardImageTop" src={adriana} alt="Patricia Morales" />
+            <div className="cardBody">
+              <h3 className='memberName'>Adriana Rangel</h3>
+              <p className='memberStatus'>Agent</p>
+              <p className='descriptionText'>
+                Text text text text text text text text text text text 
+              </p>
+              <p className='descriptionText'>
+                Text text text text text text text text text text text 
+              </p>
+            </div>
+        </div>
+      </div>
+
     </section>
   )
 }

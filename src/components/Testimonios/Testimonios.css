@@ -12,161 +12,56 @@
     color: var(--gold_color);
 }
 
-.carouselContainer {
-    max-width:100%; 
-    margin:auto;
-}
-
-.carousel-container {
-  width: 240px;          /* 1 card */
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel-controls {
+.marcoTestimonios {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2.5rem;
-}
-
-.carousel-controls .btn {
-  background-color: var(--evel1_color);
-  color: var(--alice_color);
-  border: none;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  font-size: 2.2rem;
-  font-weight: 700;
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-}
-
-.carousel-controls .btn:hover {
-  background-color: var(--level5_color);
-  color: var(--beige_color);
-}
-
-
-.carousel-controls .btn {
-  background-color: var(--header_color_background);
-  color: #fff;
-  border: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.carousel-controls .btn:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.testimonios {
- width: 100%;
-}
-
-.integrante {
-    flex: 0 0 220px;     /* ancho fijo para el carrusel */
-    max-width: 280px;
-    height: 270px;
-    margin: 0 10px;
-    color: var(--level2_color);
-    border-top: 2px solid var(--gold_color);
-}
-
-.integrante img {
-    width: 100px;
-}
-
-.integrante p, .integrante a {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-}
-
-.integrante .boton {
-    background-color: var(--level1_color);
-    width: 80px;
-    border-radius: 5px;
-
-    position: absolute; 
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%);
+  gap: 12px;
+  border-top: 2px solid var(--gold_color);
+  
 
 }
-
-.cardImage {
-    width: 150;
-    height: 150;
-    object-fit: 'cover';
-}
-
-.testimonio {
-    background-color: var(--header_color_background);
-    color: white;
-    font-size: 15px;
-}
-
-
- /* ***********  */
-.vmodal {
-  position: fixed;
-  inset: 0;
-  display: grid;   /* ✅ SIEMPRE visible cuando existe */
-  place-items: center;
-  background: rgba(0,0,0,.7);
-  z-index: 9999;
-}
-
-
-.vbox {
-  position: relative;
-  background: #000; /* mejor contraste */
-  border-radius: 10px;
-  width: 90vw;          /* 90% del ancho visible */
-  max-width: 800px;     /* límite absoluto */
-  max-height: 90vh;     /* que no sobrepase la altura visible */
-  overflow: hidden;
-}
-
-.vbox video {
-  width: 100%;
+.cardTestimonio {
+  background-color: var(--alice_color);
+  width: 360px;
   height: auto;
-  max-height: 90vh;     /* evita desbordes verticales */
-  display: block;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.vclose {
-  position: absolute;
-  top: 4px;
-  right: 10px;
-  font-size: 28px;
-  line-height: 1;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  color: white;
+.cardImageTop {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 12px;
+  padding: 12px;
+
+}
+
+.memberName, .memberStatus {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.cardBody {
+  text-align: center;
+  color: var(--header_color_background);
+  padding: 12px 24px;
+
+}
+
+.descriptionText {
+  font-size: 1.7rem;
+  line-height: 2rem;
 }
 
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
     .integrante {
        height: 300px;
-    }
-
-    .carousel-container {
-      width: calc(240px * 3);   /* 3 cards */
     }
 }
