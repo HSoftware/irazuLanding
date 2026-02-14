@@ -1,7 +1,7 @@
 
 /* ********** FOOTER ********** */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--header_color_background);
 }
 
 footer .separador {
