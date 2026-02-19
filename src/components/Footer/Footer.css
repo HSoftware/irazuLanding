@@ -1,7 +1,14 @@
 
 /* ********** FOOTER ********** */
 footer {
-    background-color: var(--header_color_background);
+    background: linear-gradient( 
+        90deg, 
+        #004444 0%, /* Extremo izquierdo: muy oscuro */ 
+        #006666 20%, /* Oscuro */ 
+        #008080 80%, /* Vuelta al teal */ 
+        #006666 100% /* Extremo derecho oscuro */ 
+    );
+    position: relative;
 }
 
 footer .separador {
@@ -13,13 +20,17 @@ footer .separador {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--gold_color);
 }
+
 .final h2 {
     padding: 12px;
+    color: var(--gold_color);
 }
 
 .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 12px;
     width: 320px;
 }
@@ -48,10 +59,29 @@ footer .separador {
     color: var(--gold_color);
 }
 
+.email-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-contacto a, .email-contacto p{
+    text-align: center;
+    color: var(--gold_color);
+
+}
+
+.wasap {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+
+}
+
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {  
 
   .final .separador {
     width: 60%;
-  }
+  } 
 }

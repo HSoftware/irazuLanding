@@ -9,7 +9,7 @@ return (
         <p><b>No se requiere experiencia previa.</b></p>
         <p><b>Brindamos capacitación y acompañamiento continuo.</b></p>
         <a href="#form-aplicar" className="d-block mb-5 pt-md-5">
-        <button className="btn-gold">Aplicar ahora y cambiar mi historia</button>
+        <button className="button-gold">Aplicar ahora y cambiar mi historia</button>
         </a>
     </div>
   </section>      

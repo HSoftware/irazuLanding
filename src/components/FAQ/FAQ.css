@@ -1,6 +1,6 @@
 
 /* ********** PREGUNTAS FRECUENTES ********** */
-.preguntas {
+.faq-preguntas {
     background-color: var(--page_color_background);
     color: var(--beige_color);
     margin: 30px 0px;
@@ -8,22 +8,25 @@
     justify-content: center;
 }
 
-.contenedor-preguntas {
+.faq-contenedor-preguntas {
     background-color: var(--header_color_background);
     width: 80%;
     padding: 20px;
     border-radius: 10px;
     border: 4px solid var(--gold_color);
-    h2 {
-        color: var(--beige_color);
-    }
+    
 }
 
-.preguntas button {
+.faq-contenedor-preguntas h2 {
     color: var(--beige_color);
+}
+
+.faq-boton {
     border: none;
+    outline: none;
+    background-color: var(--primary_color);
+    color: var(--beige_color);
     border-top: 1px solid var(--gold_color);
-    border-radius: 0px;   
 }
 
 .faq-answer {
@@ -59,9 +62,7 @@
     color: white;
 }
 
-.faq-boton {
-    background-color: var(--header_color_background);
-}
+
 .faq-header svg{
     color: var(--gold_color);
 }
@@ -79,7 +80,7 @@
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
   
-    .contenedor-preguntas {
+    .faq-contenedor-preguntas {
         margin: 0 auto;
         max-width: 700px;
         padding: 70px;

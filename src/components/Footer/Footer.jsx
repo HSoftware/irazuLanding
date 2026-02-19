@@ -15,48 +15,41 @@ return (
   <footer className="p-5">
       <div className="final">
           
-          <div className="logos-contenedor">
-              <h2>¡Sígueme!</h2>
-                <div className="logos d-flex justify-center">
-                    <a href="https:"><span className="wasap px-3"> 
-                        <BsWhatsapp size="35px"/>
-                    </span></a>
-                    
-                    <a href="https://www.instagram.com/yrazucarmona?igsh=emdpMW1oNmJpaWJh"><span className="instagram px-3"> 
-                        <BsInstagram size="35px"/>
-                    </span></a>
+    <div className="logos-contenedor">
+        <h2>¡Sígueme!</h2>
+        <div className="logos">
+            
+            <a href="https://www.instagram.com/yrazucarmona?igsh=emdpMW1oNmJpaWJh"><span className="instagram px-3"> 
+                <BsInstagram size="35px"/>
+            </span></a>
 
-                    <a href="https://www.facebook.com/share/17ZPsfERfZ/"><span className="facebook px-3">
-                        <BsFacebook size="35px"/>
-                    </span></a>
-                    
-                    <a href="https://www.tiktok.com/@yrazucarmona?_t=ZS-90IbuLR5raX&_r=1"><span className="tictoc px-3"> 
-                        <BsTiktok size="35px"/>
-                    </span></a>
+            <a href="https://www.facebook.com/share/17ZPsfERfZ/"><span className="facebook px-3">
+                <BsFacebook size="35px"/>
+            </span></a>
 
-                    <a href="https://youtube.com/@yrazucarmona?si=YVrsvvX2s7LnnbNp"><span className="youtube px-3"> 
-                        <BsYoutube size="35px"/>
-                    </span></a>
-                </div>
-            </div>
+        </div>  
+    </div>
 
             <img src={separador02} alt="" className="separador"/>
             
-            <div className="legales text-center text-md-left">
+            <div className="legales text-center">
                   <a href="#">Política de privacidad</a> <br />
                   <a href="#">Términos y condiciones</a>
           </div>
 
             <img src={separador02} alt="" className="separador"/>
 
-          <div className="email-contacto text-center text-md-right">
+          <div className="email-contacto">
               <a href="mailto:teamyrazu@gmail.com">teamyrazu@gmail.com</a>
               <p className="font-weight-bold pt-4 text-center">
-                  Yrazú Carmona Website <br />
+                  Yrazú Carmona Website<br />
                   Copyright © 2025 
               </p>
           </div>   
       </div>
+    <a href="https:"><span className="wasap"> 
+        <BsWhatsapp size="45px"/>
+    </span></a>
   </footer>  
   )
 }

@@ -128,7 +128,7 @@ export default function Formulario() {
                             </div>
                         </div>
                         
-                        <button type="submit" className="btn btn-gold d-block mx-auto">Enviar</button>
+                        <button type="submit" className="btn button-gold d-block mx-auto">Enviar</button>
                         
                         <div className="mt-3 text-center">
                             <p className="microtexto">

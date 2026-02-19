@@ -51,8 +51,8 @@ export default function FAQ() {
 
 
 return (
-  <section className="preguntas">
-    <div className="contenedor-preguntas">
+  <section className="faq-preguntas">
+    <div className="faq-contenedor-preguntas">
       <h2 className="mb-5">Preguntas frecuentes</h2>
 
       {faqs.map((faq, i) => (
