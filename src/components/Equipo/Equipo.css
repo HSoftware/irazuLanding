@@ -1,7 +1,6 @@
 /* ********** EQUIPO ********** */
 .equipo {
-    background-color: var(--beige_color);
-
+  background: linear-gradient(180deg, #F1E9DD 0%, #E9D2BA 100%);
 }
 .equipo h2 {
         padding-bottom: 2rem;

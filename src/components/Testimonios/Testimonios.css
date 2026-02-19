@@ -15,23 +15,24 @@
 .marcoTestimonios {
   margin-top: 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  border-top: 2px solid var(--gold_color);
-  
-
-}
-.cardTestimonio {
-  background-color: var(--alice_color);
-  width: 360px;
-  height: auto;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  gap: 40px;
+}
+
+.cardTestimonio {
+  background-color: var(--alice_color);
+  width: 360px;
+  padding: 10px 15px 10px 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-top: 2px solid var(--gold_color);
+  border-radius: 25px;
+  
 }
 
 .cardImageTop {
@@ -43,10 +44,17 @@
 
 }
 
-.memberName, .memberStatus {
-  font-size: 1.8rem;
+.memberName {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.memberStatus {
+  font-size: 2rem;
   font-weight: 600;
 }
+
 .cardBody {
   text-align: center;
   color: var(--header_color_background);
@@ -61,7 +69,10 @@
 
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
-    .integrante {
-       height: 300px;
-    }
+  .marcoTestimonios {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
 }

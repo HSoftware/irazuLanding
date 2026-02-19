@@ -3,15 +3,20 @@
 .preguntas {
     background-color: var(--page_color_background);
     color: var(--beige_color);
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor-preguntas {
     background-color: var(--header_color_background);
     width: 80%;
-    margin: 50px auto;
+    padding: 20px;
     border-radius: 10px;
     border: 4px solid var(--gold_color);
-    
+    h2 {
+        color: var(--beige_color);
+    }
 }
 
 .preguntas button {
@@ -27,6 +32,10 @@
     padding-right: 2rem;
     padding-bottom: 2rem;
     animation: fadeIn 0.3s ease;
+    p {
+        color: var(--beige_color);
+        text-align: center;
+    }
 }
 
 @keyframes fadeIn {
@@ -43,9 +52,11 @@
 }
 
 .question {
-    padding: 24px;
-    font-weight: 600;
+    padding: 24px 0px 24px 0px;
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
+    color: white;
 }
 
 .faq-boton {
@@ -63,9 +74,7 @@
   color: var(--gold_color);
 }
 
-.icon {
-    padding-right: 20px;
-}
+
 
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
@@ -73,7 +82,13 @@
     .contenedor-preguntas {
         margin: 0 auto;
         max-width: 700px;
-        padding: 4rem;
+        padding: 70px;
         border-radius: 1rem;
     }
+
+    .question {
+        padding: 24px 0px 24px 0px;
+        font-size: 25px;
+    }
 }
+

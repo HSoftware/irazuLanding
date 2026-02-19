@@ -51,8 +51,8 @@ export default function FAQ() {
 
 
 return (
-  <section className="preguntas px-3 mx-auto">
-    <div className="contenedor-preguntas p-5">
+  <section className="preguntas">
+    <div className="contenedor-preguntas">
       <h2 className="mb-5">Preguntas frecuentes</h2>
 
       {faqs.map((faq, i) => (
@@ -62,7 +62,7 @@ return (
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             >
             <div className="faq-header">
-                <span className="icon me-3">{faq.icon}</span>
+                <span className="icon">{faq.icon}</span>
                 <h3 className="question">{faq.question}</h3>
                 <span className="faq-icon">
                 {openIndex === i ? "−" : "+"}

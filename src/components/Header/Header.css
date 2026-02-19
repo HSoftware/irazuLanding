@@ -3,12 +3,21 @@
 
 header {
     width: 100%;
-    background-color: var(--header_color_background);
+    background: linear-gradient( 
+        90deg, 
+        #004444 0%, /* Extremo izquierdo: muy oscuro */ 
+        #006666 20%, /* Oscuro */ 
+        #008080 40%, /* Teal original */ 
+        #3f9f9f 50%,  /*Luminoso centro */ 
+        /*#7fbfbf 60%,  Más luminoso */ 
+        #008080 80%, /* Vuelta al teal */ 
+        #006666 100% /* Extremo derecho oscuro */ 
+    );
 
 }
 nav {
     width: 100%;
-    padding: 30px 0px 15px 0px;
+    padding: 15px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +25,8 @@ nav {
 }
 
 .firma-yrazu {
-    padding-top: 40px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     width: 340px;
 }
 

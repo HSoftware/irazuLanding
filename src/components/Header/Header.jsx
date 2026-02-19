@@ -1,4 +1,4 @@
-import firma from "../../assets/images/firma_brillo.png" 
+import firma from "../../assets/images/firma03.png" 
 import globe from "../../assets/images/logo-globe-life.png"
 import "./Header.css"
 

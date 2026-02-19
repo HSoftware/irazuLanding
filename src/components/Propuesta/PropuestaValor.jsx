@@ -1,4 +1,4 @@
-import yrazu from "../../assets/images/Yrazu03.png" 
+import yrazu from "../../assets/images/Yrazu02.png" 
 import "./Propuesta.css"
 
 export default function PropuestaValor() {
@@ -8,17 +8,13 @@ return (
 
         <div className="emparejados">
             <div className="FotoYrazu">
-                <div className="bordeExternoFoto">
-                    <div className="bordeInternoFoto">
-                        <img src={yrazu} alt="Foto Yrazú Carmona" />
-                    </div>
-                </div>
+                <img src={yrazu} alt="Foto Yrazú Carmona" />
             </div>
 
-          <div className="sobre-yrazu p-5">
+          <div className="sobre-yrazu">
             <h2 className="protagonista">Yrazú Carmona</h2>
             <p className="text-center">
-                Mamá, esposa y líder con propósito.
+                Mamá, esposa y líder con propósito
             </p>
             <p className="py-3">
                 Como inmigrante, construí mi carrera liderando equipos latinos en la industria 

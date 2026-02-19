@@ -1,5 +1,5 @@
 
-/* ********** HERO ********** */
+/* ********** HERO ********** */ 
 .HeroSection {
     background-color: var(--hero_color_background);
 }
@@ -20,7 +20,8 @@
 
 /* ********** ENGANCHE ********** */
 .enganche {
-     color: var(--level2 _color);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+
 }
 
 .separador02 {
@@ -49,15 +50,14 @@
 
 .formulario{
   position: relative;
-  width: 90%;
+  width: 400px;
   margin: 0 auto;
   border-radius: 1rem;
-  min-width: 320px;
-  max-width: 400px;
   border: 0;                 /* el borde lo hace ::before */
   overflow: hidden;          /* para respetar el radio */
   padding: 4px;
   overflow: hidden;
+  
 }
 
 .formulario::before{
@@ -88,9 +88,8 @@
 
 .formulario .preguntas {
     padding: 3rem;
-    background-color: var(--header_color_background);
-    color: var(--beige_color);
-
+    background-color: var(--level1_color);
+    
     border: 0px solid;
     border-radius: 1rem;
 
@@ -99,17 +98,23 @@
 .formulario .preguntas input{
     font-size: 1.5rem;
     font-weight: 500;
+    
 }
 
 .formulario .preguntas button {
-    color: var(--level2_color);
+    color: var(--primary_color);
     border-radius: 1rem;
     width: 100px;
     font-size: 1.5rem;
 }
 
+.form-group label{
+    color: var(--beige_color);
+}
+
 .formulario .preguntas .microtexto {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--beige_color);
 }
 
 .cartaBussinesLogo {
@@ -127,8 +132,14 @@
 .texto-respaldo {
     width: 80%;
     margin: 0 auto;
-    color: var(--gold_color);
+    
+    h3, p {
+        color: var(--gold_color);
+        text-shadow: 2px 2px 6px rgba(175, 146, 76,0.8);
+
+    }
 }
+
 
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
@@ -159,13 +170,11 @@
 
     .enganche p {
         padding: 0rem 2rem;
-        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
 
     .enganche li {
         font-size: 2.5rem;
         padding-bottom: 1.7rem;
-        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
 
     .separador02 {
