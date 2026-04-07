@@ -70,8 +70,4 @@
     line-height: 2.4rem;
     color: var(--header_color_background);
   }
-
-  .contador-descripcion {
-    color: var(--header_color_background);
-  }
 }

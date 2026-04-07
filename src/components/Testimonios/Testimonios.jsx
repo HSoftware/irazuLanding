@@ -28,9 +28,15 @@ export default function Testimonios() {
             <p className="descriptionText">
               Cerré una etapa profunda de mi vida y elegí reinventarme. Con casi
               60 años, inicié esta carrera profesional con disciplina y
-              determinación. El resultado habla por sí solo; más de $100,000 en
-              ingresos en mi primer año. Mi historia tiene un mensaje claro — el
-              crecimiento no tiene edad. Los nuevos comienzos tampoco.
+              determinación.
+            </p>
+            <p className="descriptionText">
+              El resultado habla por sí solo; más de $100,000 en ingresos en mi
+              primer año.
+            </p>
+            <p className="descriptionText">
+              Mi historia tiene un mensaje claro — el crecimiento no tiene edad.
+              Los nuevos comienzos tampoco.
             </p>
           </div>
         </div>
@@ -48,9 +54,11 @@ export default function Testimonios() {
               Trabajé en empleos donde mi esfuerzo nunca fue valorado, hasta que
               decidí apostar por mí mismo en Carta Business Group. Con el
               respaldo de mis managers Yrazú y Alejandro, superé la adversidad,
-              encontré mi propósito y transformé mi vida. Hoy soy Agente
-              Supervisor y ocupo el #1 en el Top 5 de Productores del Mes —
-              equipo Las Vegas/Arizona.
+              encontré mi propósito y transformé mi vida.
+            </p>
+            <p className="descriptionText">
+              Hoy soy Agente Supervisor y ocupo el #1 en el Top 5 de Productores
+              del Mes — equipo Las Vegas/Arizona.
             </p>
           </div>
         </div>
@@ -62,11 +70,16 @@ export default function Testimonios() {
             <p className="memberStatus">SA</p>
             <p className="descriptionText">
               Todo empezó con una llamada. Yo tenía tres trabajos y buscaba algo
-              más. En 2023 encontré ese algo; aprendizaje constante, crecimiento
-              real y un equipo que me acompaña en cada paso. Hoy tengo una
-              carrera profesional sólida, con logros y resultados que la
-              respaldan; Founders Club y Top Supervising Agent. Construido con
-              constancia, propósito y equipo.
+              más.
+            </p>
+            <p className="descriptionText">
+              En 2023 encontré ese algo; aprendizaje constante, crecimiento real
+              y un equipo que me acompaña en cada paso.
+            </p>
+            <p className="descriptionText">
+              Hoy tengo una carrera profesional sólida, con logros y resultados
+              que la respaldan; Founders Club y Top Supervising Agent.
+              Construido con constancia, propósito y equipo.
             </p>
           </div>
         </div>
