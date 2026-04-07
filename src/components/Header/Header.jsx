@@ -1,16 +1,18 @@
-import firma from "../../assets/images/firma03.png" 
-import globe from "../../assets/images/logo-globe-life.png"
-import "./Header.css"
-
+import firma from "../../assets/images/firma.png";
+import globe from "../../assets/images/logo-globe-life.png";
+import "./Header.css";
 
 export default function Header() {
-
-return (
- <header> 
-    <nav>
-      <img src={firma} alt="Yrazú Carmona" className="firma-yrazu" />
-      <img src={globe} alt="Globe Life – American Income Division" className="globe-life" />
-    </nav>
-  </header>
-  )
+  return (
+    <header>
+      <nav>
+        <img src={firma} alt="Yrazú Carmona" className="firma-yrazu" />
+        <img
+          src={globe}
+          alt="Globe Life – American Income Division"
+          className="globe-life"
+        />
+      </nav>
+    </header>
+  );
 }
