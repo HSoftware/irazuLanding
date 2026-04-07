@@ -1,66 +1,76 @@
 /* ********** EQUIPO ********** */
 .equipo {
-  background: linear-gradient(180deg, #F1E9DD 0%, #E9D2BA 100%);
+  background: linear-gradient(180deg, #f1e9dd 0%, #e9d2ba 100%);
 }
 .equipo h2 {
-        padding-bottom: 2rem;
-        color: var(--primary-color);
+  padding-bottom: 2rem;
+  color: var(--header_color_background);
 }
 
-.equipo-carousel-wrapper {
+/* Contenedor principal de la imagen */
+.equipo-imagen-unica {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1100px; /* Un ancho estándar para secciones de impacto */
+  margin: 2rem auto; /* Centra el bloque y da espacio arriba/abajo */
+  border-radius: 20px; /* Bordes suaves para un look moderno */
+  overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra sutil para dar relieve */
+  background-color: #f8f9fa; /* Fondo neutro mientras carga la imagen */
 }
 
-.equipo-carousel {
-  overflow: hidden;
+/* Estilos para la imagen dentro del contenedor */
+.equipo-imagen-unica img {
   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Evita que la imagen se deforme */
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.equipo-carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
+/* Efecto visual al pasar el mouse (opcional) */
+.equipo-imagen-unica:hover img {
+  transform: scale(1.03); /* Un zoom muy suave que da dinamismo */
 }
 
-.equipo-carousel-track img {
-  width: 100%;
-  flex-shrink: 0;
-  border-radius: 1rem;
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .equipo-imagen-unica {
+    border-radius: 10px; /* Bordes menos pronunciados en móvil */
+    margin: 1.5rem auto;
+  }
 }
 
 /* ********** CONTADORES ********** */
 .contador {
-    width: 280px;
+  width: 280px;
 }
 .contador p {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contador span {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--gold_color);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--gold_color);
 }
 
 /* ********** PANTALLAS GRANDES ********** */
 @media (min-width: 768px) {
-  
+  .equipo h2 {
+    padding-bottom: 3rem;
+  }
 
-    .equipo h2 {
-        padding-bottom: 3rem;
-    }
+  .contador {
+    padding: 0px 1rem;
+  }
 
-    .contador {
-        padding: 0px 1rem;
-    }
+  .contador p {
+    padding: 0px 1rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 
-    .contador p{
-        padding: 0px 1rem;
-        font-size: 2rem;
-        line-height: 2.4rem;
-    }
-
-    .equipo-carousel-wrapper {
+  .equipo-carousel-wrapper {
     width: 70%;
   }
 }

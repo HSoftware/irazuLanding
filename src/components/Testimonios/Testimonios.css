@@ -1,15 +1,15 @@
 /* ********** TESTIMONIOS ********** */
 .prueba-social {
-    background-color: var(--page_color_background);
-    color: var(--beige_color);
+  background-color: var(--page_color_background);
+  color: var(--beige_color);
 }
 
 .tituloPruebaSocial {
-    color:var(--header_color_background);
+  color: var(--header_color_background);
 }
 
 .goldenText {
-    color: var(--gold_color);
+  color: var(--gold_color);
 }
 
 .marcoTestimonios {
@@ -32,7 +32,6 @@
   align-items: center;
   border-top: 2px solid var(--gold_color);
   border-radius: 25px;
-  
 }
 
 .cardImageTop {
@@ -41,13 +40,12 @@
   border-radius: 50%;
   margin-top: 12px;
   padding: 12px;
-
 }
 
 .memberName {
   font-size: 2.5rem;
   font-weight: 600;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .memberStatus {
@@ -59,7 +57,6 @@
   text-align: center;
   color: var(--header_color_background);
   padding: 12px 24px;
-
 }
 
 .descriptionText {
@@ -74,5 +71,4 @@
     flex-wrap: wrap;
     align-items: stretch;
   }
-  
 }
