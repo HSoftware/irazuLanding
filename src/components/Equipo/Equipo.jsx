@@ -8,40 +8,49 @@ export default function Equipo() {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   // CONTADORES
+  // CONTADORES
   useEffect(() => {
-    if (hasAnimated) return;
+    // Si ya animó o no hay referencias, no hacer nada
+    if (hasAnimated || countersRef.current.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          // Si el elemento es visible
           if (entry.isIntersecting) {
             animateCounters();
             setHasAnimated(true);
-            observer.disconnect();
+            observer.disconnect(); // Dejar de observar una vez activado
           }
         });
       },
-      { threshold: 0.4 },
+      { threshold: 0.1 }, // Más sensible para asegurar que dispare
     );
 
-    countersRef.current.forEach((el) => el && observer.observe(el));
+    countersRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
 
     return () => observer.disconnect();
   }, [hasAnimated]);
 
   const animateCounters = () => {
     countersRef.current.forEach((el) => {
+      if (!el) return;
+
       const target = Number(el.dataset.to);
       let current = 0;
-      const duration = 2000;
-      const step = Math.ceil(target / (duration / 16));
+      const duration = 3500; // 2 segundos
+
+      // Ajuste para números pequeños: incremento mínimo de 1
+      const increment = Math.max(1, target / (duration / 16));
 
       const update = () => {
-        current += step;
+        current += increment;
         if (current >= target) {
           el.textContent = target;
         } else {
-          el.textContent = current;
+          el.textContent = Math.floor(current);
           requestAnimationFrame(update);
         }
       };
@@ -83,7 +92,7 @@ export default function Equipo() {
             <span className="signo">+</span>
             <span
               className="numero"
-              data-to="500"
+              data-to="50" // Cambiado a 50
               ref={(el) => (countersRef.current[0] = el)}
             >
               0
@@ -94,28 +103,30 @@ export default function Equipo() {
 
         <div className="contador m-3">
           <p>
-            <span className="signo">+</span>
+            <span className="signo">$</span>
             <span
               className="numero"
-              data-to="1500"
+              data-to="58" // Solo el número para la animación
               ref={(el) => (countersRef.current[1] = el)}
             >
               0
             </span>
+            <span className="signo">K</span>
           </p>
-          <p>Ingreso promedio en el primer año como agente</p>
+          <p>Ingreso promedio en el primer año como agente.</p>
         </div>
 
         <div className="contador m-3">
           <p>
-            <span className="signo">+</span>
+            <span className="signo">$</span>
             <span
               className="numero"
-              data-to="2500"
+              data-to="100" // Solo el número para la animación
               ref={(el) => (countersRef.current[2] = el)}
             >
               0
             </span>
+            <span className="signo">K</span>
           </p>
           <p>Potencial de ingresos sin techo ni límites</p>
         </div>

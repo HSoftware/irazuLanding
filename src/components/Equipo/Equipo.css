@@ -68,9 +68,10 @@
     padding: 0px 1rem;
     font-size: 2rem;
     line-height: 2.4rem;
+    color: var(--header_color_background);
   }
 
-  .equipo-carousel-wrapper {
-    width: 70%;
+  .contador-descripcion {
+    color: var(--header_color_background);
   }
 }
