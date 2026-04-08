@@ -57,19 +57,48 @@
 @media (min-width: 768px) {
   .emparejados {
     flex-direction: row;
-    align-items: center; /* Alinea verticalmente el texto con la foto */
-    gap: 40px; /* Crea espacio real entre foto y texto */
-    width: 90%; /* Damos un poco más de aire en tablets */
-    max-width: 1200px; /* Pero limitamos en monitores gigantes */
+    align-items: center;
+    gap: 60px; /* Aumentamos el espacio entre foto y texto */
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .protagonista {
+    /* Forzamos el tamaño en px para que no dependa de la raíz */
+    font-size: 50px !important;
+    text-align: left;
+    line-height: 1.1; /* Hace que el nombre se vea compacto y moderno */
+    padding: 0 0 20px 0; /* Espacio solo abajo para separar de la descripción */
+    margin: 0;
+  }
+
+  .sobre-yrazu p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .text-center {
+    text-align: left !important;
+  }
+
+  .listaPropuesta {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .itemListaPropuesta {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .FotoYrazu {
-    flex: 1; /* Ocupa espacio proporcional */
-    min-width: 280px; /* Evita que se haga diminuta */
-  }
-
-  .sobre-yrazu {
-    flex: 1.5; /* Le da un poco más de peso al texto que a la foto */
-    max-width: none; /* Quitamos el límite para que fluya en el flex */
+    /* Mantenlo, pero bajamos el flex de 1 a 0.8 
+       para que el texto (que tiene 1.5) tenga más protagonismo */
+    flex: 0.8;
+    min-width: 280px;
+    display: flex;
+    justify-content: center; /* Asegura que la imagen esté centrada en su columna */
   }
 }
