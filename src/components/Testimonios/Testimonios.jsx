@@ -1,11 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 
-import sergio from "../../assets/images/sergio.jpg";
-import Luis from "../../assets/images/Luis.png";
-
 import doris from "../../assets/images/Doris.png";
 import patricia from "../../assets/images/patricia.png";
-import francisco from "../../assets/images/Luis.png";
+import francisco from "../../assets/images/Francisco.png";
 import "./Testimonios.css";
 
 export default function Testimonios() {

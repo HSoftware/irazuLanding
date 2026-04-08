@@ -1,74 +1,75 @@
-
 /* ********** PROPUESTA ********** */
 
 .propuesta-valor {
-    background: linear-gradient(180deg, #F1E9DD 0%, #E9D2BA 100%);
-    padding: 12px 24px 0px 24px; 
+  background: linear-gradient(180deg, #f1e9dd 0%, #e9d2ba 100%);
+  padding: 40px 24px;
 }
 
-
-.tituloPropuesta, .protagonista{
-    text-align: center;
-    padding: 18px;
+.tituloPropuesta,
+.protagonista {
+  text-align: center;
+  padding: 18px;
 }
 
 .protagonista {
-    color: var(--gold_color);
-    text-shadow: 2px 2px 6px rgba(175, 146, 76,0.8);
-    
+  color: var(--gold_color);
+  text-shadow: 2px 2px 6px rgba(175, 146, 76, 0.8);
 }
 
 .emparejados {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .FotoYrazu img {
-    width: 320px;
-    height: 480px;
-    display: block;
-    margin: 0 auto;
+  /* Cambiamos el ancho fijo por uno responsivo */
+  width: 100%;
+  max-width: 320px;
+  height: auto; /* Importante para no deformar la foto */
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; /* Mantiene la proporción */
 }
 
 .sobre-yrazu {
-   max-width: 480px;
-
+  max-width: 480px;
 }
 
 .listaPropuesta {
-    list-style: none;
+  list-style: none;
 }
 
 .itemListaPropuesta {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .iconoDorado {
-    color: var(--gold_color);
-    font-weight: 700;
+  color: var(--gold_color);
+  font-weight: 700;
 }
-
 
 /* Pantallas grandes  */
 
 @media (min-width: 768px) {
-    .emparejados {
-        flex-direction: row;
-    }
+  .emparejados {
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente el texto con la foto */
+    gap: 40px; /* Crea espacio real entre foto y texto */
+    width: 90%; /* Damos un poco más de aire en tablets */
+    max-width: 1200px; /* Pero limitamos en monitores gigantes */
+  }
 
-.FotoYrazu {
-    width: 40%;
-    margin: 0 auto;
-}
+  .FotoYrazu {
+    flex: 1; /* Ocupa espacio proporcional */
+    min-width: 280px; /* Evita que se haga diminuta */
+  }
 
-.sobre-yrazu {
-    width: 60%;
-    margin: 0 auto;
-
-}
-
+  .sobre-yrazu {
+    flex: 1.5; /* Le da un poco más de peso al texto que a la foto */
+    max-width: none; /* Quitamos el límite para que fluya en el flex */
+  }
 }
