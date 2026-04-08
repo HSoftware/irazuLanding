@@ -15,7 +15,7 @@ export default function PropuestaValor() {
 
         <div className="sobre-yrazu">
           <h2 className="protagonista">Yrazú Carmona</h2>
-          <p className="text-center">Mamá, esposa y líder con propósito</p>
+          <p>Mamá, esposa y líder con propósito</p>
           <p className="py-3">
             Como inmigrante, construí mi carrera liderando equipos latinos en la
             industria financiera; hoy estos equipos crecen con un propósito,
