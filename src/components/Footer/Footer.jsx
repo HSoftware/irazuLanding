@@ -1,8 +1,7 @@
 import { BsWhatsapp } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
-import { BsTiktok } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
+import { BsEnvelopeAt } from "react-icons/bs";
 import separador02 from "../../assets/images/separador02.png";
 import "./Footer.css";
 
@@ -11,21 +10,29 @@ export default function Footer() {
     <footer className="p-5">
       <div className="final">
         <div className="logos-contenedor">
-          <div className="email-contacto">
-            <a href="mailto:mindsetresetg@gmail.com">mindsetresetg@gmail.com</a>
-          </div>
-
           <h2>¡Sígueme!</h2>
           <div className="logos">
-            <a href="https://www.instagram.com/yrazucarmona?igsh=emdpMW1oNmJpaWJh">
+            <a
+              href="https://www.instagram.com/yrazucarmona?igsh=emdpMW1oNmJpaWJh"
+              title="Instagram"
+            >
               <span className="instagram px-3">
                 <BsInstagram size="35px" />
               </span>
             </a>
 
-            <a href="https://www.facebook.com/share/17ZPsfERfZ/">
+            <a
+              href="https://www.facebook.com/share/17ZPsfERfZ/"
+              title="Facebook"
+            >
               <span className="facebook px-3">
                 <BsFacebook size="35px" />
+              </span>
+            </a>
+
+            <a href="mailto:mindsetresetg@gmail.com" title="Correo Electrónico">
+              <span className="email px-3">
+                <BsEnvelopeAt size="35px" />
               </span>
             </a>
           </div>
@@ -41,11 +48,11 @@ export default function Footer() {
         <img src={separador02} alt="" className="separador" />
 
         <div className="email-contacto">
-          <a href="mailto:teamyrazu@gmail.com">teamyrazu@gmail.com</a>
           <p className="font-weight-bold pt-4 text-center">
             Yrazú Carmona Website
-            <br />
-            Copyright © 2025
+          </p>
+          <p className="font-weight-bold text-center">
+            Copyright © 2026. Todos los derechos reservados.
           </p>
         </div>
       </div>

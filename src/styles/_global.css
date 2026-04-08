@@ -1,70 +1,69 @@
 :root {
---old-primary-color: #011514; 
---primary_color: #025951; 
---level1_color: #365B59;
---level2_color: #1F3E3D;
---level3_color: #082423;
---level4_color: #011514;
---alice_color: white;  /* aliceblue */
---level5_color: #62a8a5;
---gold_color: #af924c;
---beige_color: #E9D2BA; 
---header_color_background: #025951;
---hero_color_background: #f1e9dd;
---page_color_background: #f1e9dd;
---lightGold_color: #E6D7A8;
---beigeGold_color: #D6C38F;
---darkGreen_color: #094d4b;
-
-} 
+  --old-primary-color: #011514;
+  --primary_color: #025951;
+  --level1_color: #365b59;
+  --level2_color: #1f3e3d;
+  --level3_color: #082423;
+  --level4_color: #011514;
+  --alice_color: white; /* aliceblue */
+  --level5_color: #62a8a5;
+  --gold_color: #af924c;
+  /* --beige_color: #e9d2ba; */
+  --beige_color: #f7f2ea;
+  --header_color_background: #025951;
+  --hero_color_background: #f1e9dd;
+  --page_color_background: #f1e9dd;
+  --lightGold_color: #e6d7a8;
+  --beigeGold_color: #d6c38f;
+  --darkGreen_color: #094d4b;
+}
 
 html {
   font-size: 62.5%;
-  
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--hero_color_background);
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--hero_color_background);
 }
 
-h1, h2, h3, p {
-    color: var(--primary_color)
-
+h1,
+h2,
+h3,
+p {
+  color: var(--primary_color);
 }
-
 
 h1 {
-    font-size: 4em;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
-
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 }
 
 h3 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
 }
 
-p, li, a, label {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.2rem;
-    color: var(--primary_color);
+p,
+li,
+a,
+label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: var(--primary_color);
 }
-
-
